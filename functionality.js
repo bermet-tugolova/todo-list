@@ -45,12 +45,12 @@ const deleteTodo = (e) =>{
         e.currentTarget.parentNode.classList.remove('taskItem')
     }
 }
-    const getTodos = () =>{
-        fetch('https://jsonplaceholder.typicode.com/todos?_page=1')
-        .then(response =>response.json())
-        .then(array=>{
-            console.log(array)
-            localStorage.setItem('todos',JSON.stringify(array))
-        })
-    }
-    getTodos()
+//     const getTodos = () =>{
+//         fetch('https://jsonplaceholder.typicode.com/todos?_page=1')
+//         .then(response =>response.json())
+//         .then(array=>{
+//             console.log(array)
+//             localStorage.setItem('todos',JSON.stringify(array))
+//         })
+//     }
+//     getTodos()
